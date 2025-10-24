@@ -1,0 +1,549 @@
+
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دليل المرشد</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="/assets/img/logo.png">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header">
+        <div class="logo">
+          <img src="assets/img/logo.png" alt="logo">
+          <h4>المرشد</h4>
+          <div class="dropdown flag-picker">
+            <button class="btn dropdown-toggle flag-btn" type="button" id="dropdownToggleBtn">
+              <img class="flag-icon" src="assets/img/flag/syria.webp" alt="Iraq flag">
+            </button>
+            <ul class="dropdown-menu" id="flagDropdown">
+              <li>
+                <a class="dropdown-item" href="index.html">
+                  <img class="flag-icon" src="assets/img/flag/syria.webp" alt="Iraq flag">العربية
+                  <i class="fa fa-check text-success ms-2"></i>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="index-en.html">
+                  <img class="flag-icon" src="assets/img/flag/england.avif" alt="United Kingdom flag">English
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <div>
+          <ul class="nav">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="about.html">عن الدليل</a></li>
+            <li><a href="events.html">جميع الفعاليات</a></li>
+            <li class="dropdown-menu-1">
+              <a href="events.html">أحدث الفعاليات</a>
+              <div class="dropdown-content">
+                <a href="event.html?id=1">مهرجان اللاذقية السينمائي</a>
+                <a href="event.html?id=2">ماراثون دمشق للسلام</a>
+                <a href="event.html?id=3">معرض الكتاب في حلب</a>
+                <a href="event.html?id=4">أمسية موسيقية</a>
+              </div>
+            </li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+          </ul>
+          <button id="openSidebarBtn">
+            <svg class="openSidebarBtnIcon" width="34px" height="34px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#F1870D" stroke-width="2" stroke-linecap="round"></path> <path d="M4 12L20 12" stroke="#F1870D" stroke-width="2" stroke-linecap="round"></path> <path d="M4 6L20 6" stroke="#F1870D" stroke-width="2" stroke-linecap="round"></path> </g></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="sidebar" class="sidebar__hide">
+    <div class="sidebar__overlay"></div>
+    <div class="mobile-logo-wrapper">
+      <div class="mobile-logo">
+        <img src="assets/img/logo.png" alt="logo" style="width: 50px;">
+      </div>
+      <button id="closeSidebarBtn" class="closeSidebarBtn text-white">
+        <!-- <i class="fa-solid fa-xmark"></i> -->
+        <svg class="closeSidebarBtn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" style="width: 20px; fill: white;">
+          <path class="closeSidebarBtn" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-nav">
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="about.html">عن الدليل</a></li>
+        <li><a href="events.html">جميع الفعاليات</a></li>
+        <li class="dropdown-menu-1">
+          <a href="events.html">أحدث الفعاليات</a>
+          <div class="dropdown-content">
+            <a href="event.html?id=1">مهرجان اللاذقية السينمائي</a>
+            <a href="event.html?id=2">ماراثون دمشق للسلام</a>
+            <a href="event.html?id=3">معرض الكتاب في حلب</a>
+            <a href="event.html?id=4">أمسية موسيقية</a>
+          </div>
+        </li>
+        <li><a href="contact.html">اتصل بنا</a></li>
+      </ul>
+    </div>
+    <div class="mobile-info">
+      <ul>
+        <li>
+          <svg width="24px" height="24px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#3C72FC" transform="rotate(0)" style="margin: 0 4px"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>call [#3C72FC]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7319.000000)" fill="#3C72FC"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M94,7167 L94,7169 L96,7169 C96,7167.895 95.105,7167 94,7167 M94,7163 L94,7165 C96.206,7165 98,7166.794 98,7169 L100,7169 C100,7165.686 97.314,7163 94,7163 M94,7159 L94,7161 C98.411,7161 102,7164.589 102,7169 L104,7169 C104,7163.477 99.523,7159 94,7159 M98.652,7177.234 C98.641,7177.265 98.64,7177.27 98.652,7177.234 M98.117,7174.578 C97.422,7174.204 96.719,7173.778 95.992,7173.481 C94.587,7172.908 94.682,7174.602 93.679,7175.151 C93.027,7175.508 92.107,7174.861 91.538,7174.503 C90.544,7173.877 89.663,7173.053 88.931,7172.1 C88.556,7171.613 87.728,7170.697 87.83,7170.014 C87.992,7168.93 89.274,7168.876 88.907,7167.55 C88.711,7166.84 88.36,7166.141 88.097,7165.457 C87.745,7164.54 87.6,7163.953 86.573,7164.003 C85.831,7164.039 85.339,7164.356 84.883,7164.951 C83.649,7166.558 83.835,7168.725 84.664,7170.488 C85.838,7172.983 87.85,7175.335 89.999,7176.855 C91.461,7177.889 93.387,7178.828 95.157,7178.987 C96.453,7179.104 98.266,7178.403 98.73,7176.996 C98.698,7177.094 98.667,7177.189 98.652,7177.234 C98.663,7177.199 98.687,7177.128 98.73,7176.996 C98.777,7176.854 98.8,7176.783 98.811,7176.751 C98.797,7176.793 98.765,7176.891 98.731,7176.993 C99.139,7175.753 99.189,7175.155 98.117,7174.578 M98.811,7176.751 C98.819,7176.727 98.819,7176.725 98.811,7176.751" id="call-[#3C72FC]"> </path> </g> </g> </g> </g></svg>
+          <a class="ltr" href="tel:00963912345678">+963-912345678</a>
+        </li>
+        <li>
+          <svg width="36px" height="36px" fill="#3C72FC" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M37.1 13L9.4 24c-.9.3-.8 1.6.1 1.9l7 2.2 2.8 8.8c.2.7 1.1.9 1.6.4l4.1-3.8 7.8 5.7c.6.4 1.4.1 1.6-.6l5.4-23.2c.3-1.7-1.2-3-2.7-2.4zM20.9 29.8L20 35l-2-7.2L37.5 15 20.9 29.8z"></path></g></svg>
+          <a href="mailto:info@almurshed.com">info@almurshed.com</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+    <section class="banner">
+      <div class="overlay"></div>
+      <div class="banner-content">
+        <h1>اكتشف فعاليات مدينتك</h1>
+        <p>دليلك اليومي لأجمل الأحداث والأنشطة</p>
+        <a href="events.html">
+          <button>استعرض الفعاليات</button>
+        </a>
+      </div>
+    </section>
+
+    <section class="students-table-section">
+      <div class="section-title">
+        <h2>الطلاب المشاركين</h2>
+      </div>
+      <table class="students-table">
+        <thead>
+          <tr>
+            <th>الاسم الكامل</th>
+            <th>المعرّف</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>زين العابدين هيثم منصور</td>
+            <td>zain_alabdin_272428</td>
+          </tr>
+          <tr>
+            <td>محمد أكرم قشمير</td>
+            <td>mohamad_akram_255375</td>
+          </tr>
+          <tr>
+            <td>سليمان حمود</td>
+            <td>sulieman_267248</td>
+          </tr>
+          <tr>
+            <td>سدره عبدو</td>
+            <td>sedra_291135</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="popular-events-section">
+      <div class="section-title">
+        <h2>فعاليات بارزة</h2>
+        <p>فعاليات بارزة هذا الأسبوع</p>
+      </div>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="card-2">
+              <div class="card__header">
+                <img src="assets/img/events/مهرجان.webp" alt="ثقافة وفنون" />
+              </div>
+              <div class="card-body">
+                <div class="flex justify-between">
+                  <span class="tag">ثقافة وفنون</span>
+                  <span class="location">📍 اللاذقية</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>الجمعة 26 سبتمبر 2025</span>
+                </div>
+                <a href="event.html?id=1" class="h4">مهرجان اللاذقية السينمائي</a>
+                <p>فعالية سينمائية تعرض أفلامًا سورية وعربية، وتُقام ورشات عمل حول كتابة السيناريو والإخراج، بمشاركة نخبة من صناع الأفلام.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="card-2">
+              <div class="card__header">
+                <img src="assets/img/events/ماراثون.jpg" alt="رياضة ومجتمع" />
+              </div>
+              <div class="card-body">
+                <div class="flex justify-between">
+                  <span class="tag">رياضة ومجتمع</span>
+                  <span class="location">📍 دمشق</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>السبت 27 سبتمبر 2025</span>
+                </div>
+                <a href="event.html?id=2" class="h4">ماراثون دمشق للسلام</a>
+                <p>ماراثون جماهيري ينطلق من ساحة الأمويين ويهدف إلى تعزيز روح السلام والتضامن، بمشاركة رياضيين وهواة من مختلف الأعمار.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="card-2">
+              <div class="card__header">
+                <img src="assets/img/events/معرض-كتب.jpg" alt="ثقافة وأدب" />
+              </div>
+              <div class="card-body">
+                <div class="flex justify-between">
+                  <span class="tag">ثقافة وأدب</span>
+                  <span class="location">📍 حلب</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>الأحد 28 سبتمبر 2025</span>
+                </div>
+                <a href="event.html?id=3" class="h4">معرض الكتاب في حلب</a>
+                <p>يستضيف المعرض دور نشر محلية وعربية، ويقدم خصومات على آلاف الكتب، مع ندوات ثقافية وتوقيع كتب من مؤلفين بارزين.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide">
+            <div class="card-2">
+              <div class="card__header">
+                <img src="assets/img/events/أمسية.jpg" alt="موسيقى وفنون" />
+              </div>
+              <div class="card-body">
+                <div class="flex justify-between">
+                  <span class="tag">موسيقى وفنون</span>
+                  <span class="location">📍 اللاذقية</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>الأحد 28 سبتمبر 2025</span>
+                </div>
+                <a href="event.html?id=4" class="h4">أمسية موسيقية في قلعة صلاح الدين</a>
+                <p>عرض كلاسيكي تقدمه فرقة سورية في أجواء تاريخية ساحرة، يمزج بين المقطوعات الشرقية والغربية داخل القلعة.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="swiper-slide">
+            <div class="card-2">
+              <div class="card__header">
+                <img src="assets/img/events/ملتقى-تكنولوجي.jpg" alt="تكنولوجيا وريادة أعمال" />
+              </div>
+              <div class="card-body">
+                <div class="flex justify-between">
+                  <span class="tag">تكنولوجيا وريادة أعمال</span>
+                  <span class="location">📍 طرطوس</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>الإثنين 29 سبتمبر 2025</span>
+                </div>
+                <a href="event.html?id=5" class="h4">ملتقى الابتكار التكنولوجي في طرطوس</a>
+                <p>يجمع مطوري تطبيقات ومهندسي برمجيات لعرض مشاريعهم، ويشمل جلسات نقاش حول الذكاء الاصطناعي والتحول الرقمي.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 6 -->
+          <div class="swiper-slide">
+            <div class="card-2">
+              <div class="card__header">
+                <img src="assets/img/events/ورشة-رسم.jpg" alt="فنون وتعليم" />
+              </div>
+              <div class="card-body">
+                <div class="flex justify-between">
+                  <span class="tag">فنون وتعليم</span>
+                  <span class="location">📍 اللاذقية</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>الخميس 25 سبتمبر 2025</span>
+                </div>
+                <a href="event.html?id=6" class="h4">ورشة الرسم للأطفال في اللاذقية</a>
+                <p>ورشة فنية تهدف لتنمية مهارات الأطفال، بإشراف فنانين متخصصين، وتُعرض أعمال المشاركين في نهاية الورشة.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 7 -->
+          <div class="swiper-slide">
+            <div class="card-2">
+              <div class="card__header">
+                <img src="assets/img/events/ندوة-صحية.png" alt="صحة وتوعية" />
+              </div>
+              <div class="card-body">
+                <div class="flex justify-between">
+                  <span class="tag">صحة وتوعية</span>
+                  <span class="location">📍 دمشق</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>الثلاثاء 30 سبتمبر 2025</span>
+                </div>
+                <a href="event.html?id=7" class="h4">ندوة صحية حول التغذية والوقاية</a>
+                <p>ندوة تقام في مشفى تشرين، تتناول أحدث الدراسات حول التغذية السليمة ونصائح عملية للوقاية من الأمراض المزمنة.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 8 -->
+          <div class="swiper-slide">
+            <div class="card-2">
+              <div class="card__header">
+                <img src="assets/img/events/عرض-مسرحي.jpg" alt="مسرح وفنون أدائية" />
+              </div>
+              <div class="card-body">
+                <div class="flex justify-between">
+                  <span class="tag">مسرح وفنون أدائية</span>
+                  <span class="location">📍 دمشق</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>الجمعة 26 سبتمبر 2025</span>
+                </div>
+                <a href="event.html?id=8" class="h4">عرض مسرحي "الظل والنور"</a>
+                <p>مسرحية اجتماعية تتناول قضايا الهوية والانتماء، تُعرض بأسلوب بصري مبتكر يمزج بين الضوء والظل.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 9 -->
+          <div class="swiper-slide">
+            <div class="card-2">
+              <div class="card__header">
+                <img src="assets/img/events/بازار-منتجات-يدوية.jpg" alt="حرف يدوية ومجتمع" />
+              </div>
+              <div class="card-body">
+                <div class="flex justify-between">
+                  <span class="tag">حرف يدوية ومجتمع</span>
+                  <span class="location">📍 حمص</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>السبت 27 سبتمبر 2025</span>
+                </div>
+                <a href="event.html?id=9" class="h4">بازار المنتجات اليدوية في حمص</a>
+                <p>بازار يضم مشغولات يدوية وصابون طبيعي ومأكولات تقليدية، ويهدف لدعم النساء العاملات في المشاريع الصغيرة.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 10 -->
+          <div class="swiper-slide">
+            <div class="card-2">
+              <div class="card__header">
+                <img src="assets/img/events/جلسة-يوغا.jpg" alt="صحة ورفاهية" />
+              </div>
+              <div class="card-body">
+                <div class="flex justify-between">
+                  <span class="tag">صحة ورفاهية</span>
+                  <span class="location">📍 جبل قاسيون</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>الأحد 28 سبتمبر 2025</span>
+                </div>
+                <a href="event.html?id=10" class="h4">جلسة تأمل ويوغا الطبيعة</a>
+                <p>جلسة عند الغروب تجمع محبي التأمل واليوغا في أجواء هادئة، مع مدربين مختصين في تقنيات التنفس والاسترخاء.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- Pagination dots -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="categories-section dark-mode">
+      <div class="section-title">
+        <h2>استعرض الفعاليات حسب الفئة</h2>
+      </div>
+      <div class="categories-badges">
+        <a href="events.html?category=ثقافة%20وفنون" class="badge">ثقافة وفنون</a>
+        <a href="events.html?category=رياضة%20ومجتمع" class="badge">رياضة ومجتمع</a>
+        <a href="events.html?category=ثقافة%20وأدب" class="badge">ثقافة وأدب</a>
+        <a href="events.html?category=موسيقى%20وفنون" class="badge">موسيقى وفنون</a>
+        <a href="events.html?category=تكنولوجيا%20وريادة%20أعمال" class="badge">تكنولوجيا وريادة أعمال</a>
+        <a href="events.html?category=فنون%20وتعليم" class="badge">فنون وتعليم</a>
+        <a href="events.html?category=صحة%20وتوعية" class="badge">صحة وتوعية</a>
+        <a href="events.html?category=مسرح%20وفنون%20أدائية" class="badge">مسرح وفنون أدائية</a>
+        <a href="events.html?category=حرف%20يدوية%20ومجتمع" class="badge">حرف يدوية ومجتمع</a>
+        <a href="events.html?category=صحة%20ورفاهية" class="badge">صحة ورفاهية</a>
+      </div>
+    </section>
+
+    <section class="most-read-area mt-80 mb-50">
+      <div class="section-title">
+        <h2>أحدث الفعاليات</h2>
+        <p>أحدث الفعاليات هذا الشهر</p>
+      </div>
+      <div class="container">
+        <div class="most-read-wrapper">
+          <div class="col-md-6 col-12">
+            <div class="most-read-card most-read-card-1">
+              <div class="card-overlay"></div>
+              <img src="assets/img/events/ورشة-تطوير-ذات.jpg" />
+              <a href="event.html?id=11" class="h3">ورشة تطوير الذات للشباب في مركز الإرشاد المجتمعي</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-12 cards-wrapper">
+            <div class="most-read-card">
+              <div class="card-overlay"></div>
+              <img src="assets/img/events/معرض-فوتوغرافي.jpg" />
+              <a href="event.html?id=12" class="h5">معرض التصوير الفوتوغرافي "وجوه من سوريا"</a>
+            </div>
+            <div class="most-read-card">
+              <div class="card-overlay"></div>
+              <img src="assets/img/events/حفل-موسيقي.jpg" />
+              <a href="event.html?id=13" class="h5">حفل موسيقي تراثي في سوق الحميدية القديم</a>
+            </div>
+            <div class="most-read-card">
+              <div class="card-overlay"></div>
+              <img src="assets/img/events/ليلة-الشعر.webp" />
+              <a href="event.html?id=14" class="h5">ليلة الشعر العربي في دار الشام للثقافة والفنون</a>
+            </div>
+            <div class="most-read-card">
+              <div class="card-overlay"></div>
+              <img src="assets/img/events/معرض-كتب.jpg" />
+              <a href="event.html?id=15" class="h5">معرض الكتاب في حلب</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-12">
+          <h4>تواصل معنا</h4>
+          <ul class="contact-info">
+            <li>
+              <h5>رقمنا:</h5>
+              <svg width="25" height="25" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_529_224)">
+                  <path d="M14.8984 10.5909C14.8735 10.5703 12.0629 8.57063 11.304 8.69297C10.9379 8.75766 10.7288 9.0075 10.3093 9.50719C10.1933 9.6463 10.0747 9.7832 9.95352 9.91781C9.68836 9.83143 9.42973 9.72616 9.17961 9.60281C7.88845 8.97422 6.84524 7.93101 6.21665 6.63984C6.0933 6.38973 5.98803 6.1311 5.90165 5.86594C6.03946 5.73984 6.23258 5.57719 6.31508 5.50781C6.81243 5.09062 7.0618 4.88109 7.12649 4.51453C7.25915 3.75562 5.24915 0.945937 5.22852 0.920625C5.13698 0.790808 5.01777 0.682933 4.87948 0.604789C4.74118 0.526645 4.58726 0.480181 4.42883 0.46875C3.61415 0.46875 1.28821 3.48563 1.28821 3.99422C1.28821 4.02375 1.33086 7.02562 5.03258 10.7911C8.79383 14.4886 11.7957 14.5312 11.8252 14.5312C12.3334 14.5312 15.3507 12.2053 15.3507 11.3906C15.3392 11.2322 15.2926 11.0783 15.2144 10.94C15.1362 10.8017 15.0282 10.6825 14.8984 10.5909ZM11.7732 13.5909C11.3663 13.5562 8.84446 13.2239 5.69446 10.1297C2.58524 6.96422 2.26133 4.43813 2.22899 4.04672C2.84342 3.08233 3.58545 2.20548 4.43493 1.44C4.45368 1.45875 4.47852 1.48688 4.5104 1.52344C5.16188 2.41276 5.72309 3.36481 6.18571 4.36547C6.03527 4.51682 5.87626 4.65939 5.70946 4.7925C5.4508 4.98959 5.21328 5.21297 5.00071 5.45906C4.96474 5.50953 4.93914 5.56663 4.92538 5.62705C4.91162 5.68748 4.90998 5.75003 4.92055 5.81109C5.01975 6.24081 5.17169 6.65662 5.3729 7.04906C6.09378 8.52939 7.28997 9.72541 8.7704 10.4461C9.16276 10.6476 9.57859 10.7997 10.0084 10.8989C10.0694 10.9097 10.132 10.9082 10.1925 10.8944C10.2529 10.8807 10.31 10.8549 10.3604 10.8188C10.6074 10.6053 10.8315 10.3669 11.0293 10.1072C11.1765 9.93188 11.3729 9.69797 11.4474 9.63188C12.4506 10.094 13.4048 10.6559 14.2956 11.3091C14.3345 11.3419 14.3621 11.3672 14.3804 11.3836C13.6149 12.2333 12.7379 12.9755 11.7732 13.59V13.5909ZM11.6007 7.03125H12.5382C12.5371 6.03703 12.1416 5.08385 11.4386 4.38083C10.7356 3.67781 9.78243 3.28237 8.78821 3.28125V4.21875C9.5339 4.21949 10.2488 4.51605 10.7761 5.04333C11.3034 5.57062 11.6 6.28556 11.6007 7.03125Z" fill="white"></path>
+                  <path d="M13.9445 7.03125H14.882C14.8801 5.41566 14.2375 3.86677 13.0951 2.72437C11.9527 1.58198 10.4038 0.939361 8.78821 0.9375V1.875C10.1552 1.87661 11.4658 2.42038 12.4324 3.38701C13.3991 4.35365 13.9428 5.66422 13.9445 7.03125Z" fill="white"></path>
+                </g>
+                <defs>
+                  <clipPath>
+                    <rect width="15" height="15" fill="white" transform="translate(0.819458)"></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+              <a href="tel:00963912345678">00963912345678</a>
+            </li>
+            <li>
+              <h5>إيميلنا:</h5>
+              <svg width="25" height="25" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.8748 8.50453C13.8748 9.85566 12.7757 10.953 11.4263 10.953H3.39325C2.04384 10.953 0.94475 9.85563 0.94475 8.50453V3.39322C0.944449 2.95776 1.06111 2.53021 1.28253 2.15525L5.20216 6.07488C5.78856 6.663 6.57384 6.98706 7.41059 6.98706C8.24563 6.98706 9.03091 6.663 9.61731 6.07488L13.5369 2.15525C13.7584 2.5302 13.875 2.95776 13.8747 3.39322V8.50453H13.8748ZM11.4263 0.94475H3.39325C2.836 0.94475 2.32159 1.13334 1.91009 1.44712L5.86916 5.40791C6.27897 5.81597 6.82591 6.04231 7.41059 6.04231C7.99356 6.04231 8.54053 5.81597 8.95031 5.40791L12.9094 1.44712C12.4979 1.13334 11.9835 0.94475 11.4263 0.94475ZM11.4263 0H3.39325C1.52259 0 0 1.52259 0 3.39325V8.50456C0 10.3769 1.52259 11.8978 3.39325 11.8978H11.4263C13.2969 11.8978 14.8195 10.3769 14.8195 8.50456V3.39322C14.8195 1.52256 13.2969 0 11.4263 0Z" fill="white"></path>
+              </svg>
+              <a href="mailto:info@almurshed.com">info@almurshed.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <h4>آخر الأخبار</h4>
+          <ul class="last-news">
+            <li>
+              <a href="event.html?id=4">أمسية موسيقية في قلعة الحصن</a>
+              <p>الأحد 28 سبتمبر 2025</p>
+            </li>
+            <li>
+              <a href="event.html?id=6">ملتقى الابتكار التكنولوجي في طرطوس</a>
+              <p>الإثنين 29 سبتمبر 2025</p>
+            </li>
+            <li>
+              <a href="event.html?id=6">ورشة الرسم للأطفال في اللاذقية</a>
+              <p>الخميس 25 سبتمبر 2025</p>
+            </li>
+          </ul>
+        </div>
+ <!-- قسم فعاليات مميزة -->
+      <div class="col-lg-4 col-md-6 col-12">
+        <h4>فعاليات مميزة</h4>
+          <div class="best-articles-wrapper">
+            <ul>
+              <li><a href="event.html?id=4">
+                <img src="assets/img/events/أمسية.jpg" alt="article">
+              </a></li>
+              <li><a href="event.html?id=9">
+                <img src="assets/img/events/بازار-منتجات-يدوية.jpg" alt="article">
+              </a></li>
+              <li><a href="event.html?id=10">
+                <img src="assets/img/events/جلسة-يوغا.jpg" alt="article">
+              </a></li>
+            </ul>
+            <ul>
+              <li><a href="event.html?id=4">
+                <img src="assets/img/events/حفل-موسيقي.jpg" alt="article">
+              </a></li>
+              <li><a href="event.html?id=2">
+                <img src="assets/img/events/ماراثون.jpg" alt="article">
+              </a></li>
+              <li><a href="event.html?id=1">
+                <img src="assets/img/events/مهرجان.webp" alt="article">
+              </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row copyright">
+        <div class="col-12">
+          <h5 class="text-center ltr">
+            © All Copyright 2025 by <a href="index.html">Almurshid</a>
+          </h5>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="assets/js/script.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 3000, // time in milliseconds between slides
+        disableOnInteraction: false, // keeps autoplay running after user interaction
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        1024: { slidesPerView: 3 },
+        768: { slidesPerView: 2 },
+        480: { slidesPerView: 1 }
+      }
+    });
+  </script>
+</body>
+</html>
