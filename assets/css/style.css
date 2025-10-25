@@ -714,7 +714,7 @@ input[type=submit]:hover {
 
 .banner {
   position: relative;
-  background-image: url('/assets/img/banner.webp'); /* Replace with your image */
+  background-image: url('/assets/img/banner.jpg'); /* Replace with your image */
   background-size: cover;
   background-position: center;
   height: 100vh;
