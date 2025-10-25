@@ -166,6 +166,10 @@ header {
   transition: 200ms;
 }
 
+.header li.active a {
+  color: rgb(238, 238, 238);
+}
+
 .header .nav {
   margin-bottom: 0px;
   display: flex;
