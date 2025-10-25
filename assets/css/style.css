@@ -160,6 +160,12 @@ header {
   transition: 200ms;
 }
 
+.header li.active {
+  background-color: var(--primary-color);
+  color: rgb(238, 238, 238);
+  transition: 200ms;
+}
+
 .header .nav {
   margin-bottom: 0px;
   display: flex;
@@ -393,7 +399,7 @@ header {
   color: #fff;
   z-index: 2;
   text-align: right;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 [lang="en"] .most-read-card h5, [lang="en"] .most-read-card .h5 {
@@ -911,6 +917,7 @@ a:hover {
 .section-title h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
+  line-height: 60px;
 }
 
 .section-title p {
@@ -1368,4 +1375,35 @@ html[lang="en"] .flag-picker .dropdown-menu {
 
 html[lang="en"] body {
   direction: ltr;
+}
+
+.dark-mode #openSidebarBtn {
+  background: #474747;
+}
+
+
+
+@media only screen and (max-width: 425px){
+  .banner-content h1 {
+    font-size: 34px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 991px){
+  header .container {
+    max-width: 990px;
+  }
+}
+
+html[lang="en"] header .dropdown-content a {
+  text-align: left;
+}
+
+html[lang="en"] .card-2 .date {
+  text-align: left;
+}
+
+.dark-mode .dropdown-toggle::after {
+  color: white;
 }
